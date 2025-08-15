@@ -5,8 +5,8 @@ export default function Footer() {
         <h3 className="text-lg font-semibold mb-1">Contact us via:</h3>
         <p>
           Whatsapp:{" "}
-          <a href="tel:08033085229" className="text-pink-400 hover:underline">
-            08033085229
+          <a href="tel:09161083039" className="text-pink-400 hover:underline">
+            09161083039
           </a>
         </p>
         <p>
@@ -18,6 +18,16 @@ export default function Footer() {
             className="text-pink-400 hover:underline ml-1"
           >
             Diamond Stores
+          </a>
+        </p>
+        <p>Software-Developer:
+          <a
+            href="https://ezenwa-portfolio.vercel.app"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-pink-400 hover:underline ml-1"
+            >
+            Prince Ezenwa
           </a>
         </p>
         <p className="mt-3 text-sm opacity-70">

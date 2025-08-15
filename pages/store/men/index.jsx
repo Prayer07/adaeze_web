@@ -3,10 +3,10 @@ import React from "react";
 import Link from "next/link";
 
 const images = [
-  { id: 1, price: 7000, pic: "/images/pic1.jpg" },
-  { id: 2, price: 3000, pic: "/images/pic2.jpg" },
-  { id: 3, price: 3000, pic: "/images/pic3.jpg" },
-  { id: 4, price: 3000, pic: "/images/pic4.jpg" },
+  { id: 1, price: 7000, pic: "/men/pic1.jpg" },
+  { id: 2, price: 3000, pic: "/men/pic2.jpg" },
+  { id: 3, price: 3000, pic: "/men/pic3.jpg" },
+  { id: 4, price: 3000, pic: "/men/pic4.jpg" },
 ];
 
 export default function MenStore() {

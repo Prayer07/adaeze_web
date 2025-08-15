@@ -2,7 +2,7 @@ import { useRouter } from "next/router";
 import Image from "next/image";
 
 const products = [
-  { id: 1, price: 7000, pic: "/woman/pic1.jpg", description: "High-quality men’s jacket, perfect for all seasons." },
+  { id: 1, price: 7000, pic: "/women/pic1.jpg", description: "High-quality men’s jacket, perfect for all seasons." },
   { id: 2, price: 3000, pic: "/women/pic2.jpg", description: "Comfortable men’s casual t-shirt." },
   { id: 3, price: 3000, pic: "/women/pic3.jpg", description: "Stylish jeans with a perfect fit." },
   { id: 4, price: 3000, pic: "/women/pic4.jpg", description: "Classic sneakers for everyday wear." },
@@ -29,9 +29,11 @@ export default function ProductPage() {
           <h1 className="text-3xl font-bold mb-4">Product #{product.id}</h1>
           <p className="text-lg text-gray-700 mb-2">Price: ₦{product.price.toLocaleString()}</p>
           <p className="mb-6">{product.description}</p>
-          <button className="px-6 py-3 bg-pink-500 text-white rounded-lg hover:bg-pink-600 transition">
-            Buy Now
-          </button>
+          <a href="tel:09161083039">
+            <button className="px-6 py-3 bg-pink-500 text-white rounded-lg hover:bg-pink-600 transition">
+              Buy Now
+            </button>
+          </a>
         </div>
       </div>
   );
