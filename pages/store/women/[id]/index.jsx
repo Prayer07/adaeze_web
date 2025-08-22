@@ -8,6 +8,11 @@ const products = [
   { id: 4, price: 3000, pic: "/women/pic4.jpg", description: "Classic sneakers for everyday wear." },
 ];
 
+const number = 2348101421810
+
+const message = `Hello, I'm interested in buying product ${products.id} ${products.name}. Please send me the payment details.`;
+const encodedMessage = encodeURIComponent(message);
+
 export default function ProductPage() {
   const router = useRouter();
   const { id } = router.query;
@@ -29,7 +34,9 @@ export default function ProductPage() {
           <h1 className="text-3xl font-bold mb-4">Product #{product.id}</h1>
           <p className="text-lg text-gray-700 mb-2">Price: ₦{product.price.toLocaleString()}</p>
           <p className="mb-6">{product.description}</p>
-          <a href="tel:09161083039">
+          <a href={`https://wa.me/${number}`}
+            target="_blank"
+            rel="noopener noreferrer">
             <button className="px-6 py-3 bg-pink-500 text-white rounded-lg hover:bg-pink-600 transition">
               Buy Now
             </button>
