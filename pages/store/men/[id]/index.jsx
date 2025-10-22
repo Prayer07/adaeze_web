@@ -10,9 +10,6 @@ const products = [
 
 const number = 2348101421810
 
-const message = `Hello, I'm interested in buying product ${product.id} ${product.description}. Please send me the payment details.`;
-const encodedMessage = encodeURIComponent(message);
-
 export default function ProductPage() {
   const router = useRouter();
   const { id } = router.query;
